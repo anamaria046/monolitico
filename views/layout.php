@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Notas</title>
-    <!-- Enlace a CSS opcional -->
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Gestión de Notas</h1>
-            <ul>
-                <li><a href="../public/index.php?controller=programa&action=index">Programas</a></li>
-                <li><a href="../public/index.php?controller=estudiante&action=index">Estudiantes</a></li>
-                <li><a href="../public/index.php?controller=materia&action=index">Materias</a></li>
-                <li><a href="../public/index.php?controller=nota&action=index">Notas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="header">
+        <h1>Gestión de Notas</h1>
+        <p>Sistema de gestión académica</p>
+    </div>
+    <nav>
+        <a href="../public/index.php?controller=programa&action=index">Programas</a>
+        <a href="../public/index.php?controller=estudiante&action=index">Estudiantes</a>
+        <a href="../public/index.php?controller=materia&action=index">Materias</a>
+        <a href="../public/index.php?controller=nota&action=index">Notas</a>
+    </nav>
+    <div class="main">
         <div class="container">
-            <?php echo $content; ?>  <!-- Aquí se inserta el contenido de cada vista -->
+            <?php echo $content; ?>
         </div>
-    </main>
-    <footer>
+    </div>
+    <div class="footer">
         <p>&copy; 2023 Gestión de Notas</p>
-    </footer>
+    </div>
 </body>
 </html>
